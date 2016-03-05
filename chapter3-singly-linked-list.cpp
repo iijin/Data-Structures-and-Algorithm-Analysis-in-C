@@ -37,9 +37,9 @@ public:
 	void insertNode(int pos, int val) {
 		int i;
 		
-		if (i <= 0) {
+		if (pos <= 0) {
 			insertFront(val);
-		} else if (i >= m_size) {
+		} else if (pos >= m_size) {
 			insertBack(val);
 		} else {
 			ListNode *ptr1, *ptr2;
